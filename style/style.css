@@ -7,17 +7,17 @@
 
 @font-face {
   font-family: TT Lakes-Regular ;
-  src: url("/1stProject/TTLakes/TTLakes-Regular.ttf");
+  src: url("./TTLakes/TTLakes-Regular.ttf");
 }
 
 @font-face {
   font-family: TT Lakes-Bold;
-  src: url("/1stProject/TTLakes/TTLakes-Bold.ttf");
+  src: url("./TTLakes/TTLakes-Bold.ttf");
 }
 
 @font-face {
   font-family: TT Lakes-Medium ;
-  src: url("/1stProject/TTLakes/TTLakes-Medium.ttf");
+  src: url("./TTLakes/TTLakes-Medium.ttf");
 }
 
 /* work */
