@@ -7,17 +7,17 @@
 
 @font-face {
   font-family: TT Lakes-Regular ;
-  src: url("./TTLakes/TTLakes-Regular.ttf");
+  src: url("TTLakes/TTLakes-Regular.ttf");
 }
 
 @font-face {
   font-family: TT Lakes-Bold;
-  src: url("./TTLakes/TTLakes-Bold.ttf");
+  src: url("TTLakes/TTLakes-Bold.ttf");
 }
 
 @font-face {
   font-family: TT Lakes-Medium ;
-  src: url("./TTLakes/TTLakes-Medium.ttf");
+  src: url("TTLakes/TTLakes-Medium.ttf");
 }
 
 /* work */
@@ -172,13 +172,11 @@ header {
 }
 
 .main__title-high {
+  background-image: url(pic/highlight.svg);
   width: 4px;
   height: 40px;
   top: 112px;
   left: 4px;
-  background-color: #41F6D7;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
 }
 
 .main__title-p {
@@ -213,6 +211,7 @@ header {
 }
 
 .slideMenu__btns {
+  padding: 8px 9px;
   margin: 0;
   white-space: nowrap;
   font-family: TT Lakes-Regular;
@@ -222,9 +221,6 @@ header {
   text-align: left;
   height: 40px;
   text-decoration: none;
-  padding: 8px;
-  padding-left: 9px;
-  padding-right: 9px;
   margin-left: 16px;
 }
 
@@ -236,7 +232,7 @@ header {
   left: 16px;
   border-radius: 6px;
   background-color: #fff;
-  border: 2px solid #41F6D7; /* Задаем обводку и цвет обводки*/
+  border: 2px solid #41F6D7;
 }
 
 .readMore {
@@ -265,11 +261,17 @@ header {
   border: transparent;
   background-color: #F8F8F8;
   display: flex;
-  justify-content: start;
-  align-items: center;
   margin-left: 16px;
   margin-top: 16px;
   margin-bottom: 16px;
+}
+
+.readMore__scroll-pic {
+  width: 24px;
+  height: 24px;
+  position:relative;
+  right:10px;
+  background-image: url('pic/expand.svg');
 }
 
 .readMore__scroll-p {
@@ -277,7 +279,6 @@ header {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.20000000298023224px;
-  text-align: left;
 }
 
 .readMore__logo {
@@ -311,7 +312,7 @@ header {
 @media (min-width: 768px) and (max-width: 1023px) {
    
   .main {
-  width: 769px;
+  width: 100%;
   height: 416px;
   flex-shrink: 0;
   }
@@ -363,7 +364,7 @@ header {
     align-content: space-around;
   }
   .readMore {
-    width: 769px;
+    width: 100%;
     height: 208px;
     display: flex;
     justify-content: space-around;
@@ -396,18 +397,23 @@ header {
 
 
 @media (min-width: 1024px) {
+
   .bigMenu {
     display: initial;
   }
 
+  .main {
+   width: 100%;
+  }
+
   .bigMenu__p {
     color: #1B1C21;
-  font-family: TT Lakes-Medium;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: -0.2px;
+    font-family: TT Lakes-Medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
   }
 
   .bigHeader {
@@ -472,7 +478,7 @@ header {
     align-content: space-around;
   }
   .readMore {
-    min-width: 1120px;
+    min-width: 100%;
     display: flex;
     justify-content: space-around;
   }
@@ -484,15 +490,9 @@ header {
 
   .readMore__logo {
     margin: 0;
-    margin-left: 36px;
-    width: 531.346px;
+    width: 530px;
     height: 307px;
     flex-shrink: 0;
-  }
-
-  .none {
-    height: 60px;
-    text-align: center;
   }
 
   .readMore__logo-img {
