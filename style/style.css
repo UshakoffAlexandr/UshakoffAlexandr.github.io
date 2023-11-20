@@ -172,7 +172,7 @@ header {
 }
 
 .main__title-high {
-  background-image: url(pic/highlight.svg);
+  background-image: url("pic/highlight.svg");
   width: 4px;
   height: 40px;
   top: 112px;
@@ -271,7 +271,7 @@ header {
   height: 24px;
   position:relative;
   right:10px;
-  background-image: url('pic/expand.svg');
+  background-image: url("pic/expand.svg");
 }
 
 .readMore__scroll-p {
@@ -412,7 +412,7 @@ header {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
     letter-spacing: -0.2px;
   }
 
