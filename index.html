@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services Software</title>
@@ -11,13 +11,13 @@
       <div class="container">
         <div class="header__iner">
           <div class="header__iner-in">
-            <nav class="menu">
+            <div class="menu">
               <button class="menu__btn">
                 <div class="menu__img">
                   <a href="#"></a>
                 </div>
               </button>
-            </nav>
+            </div>
             <div class="dividerFirst"></div>
             <div class="logo">
               <a href="#" class="logo__link">
@@ -25,7 +25,7 @@
               </a>
             </div>
           </div>
-          <nav class="header__iner-out">
+          <div class="header__iner-out">
             <button class="call__btn">
               <div class="call__img">
                 <a href="#" class="call__link"></a>
@@ -52,7 +52,7 @@
                 <a href="#" class="search__link"></a>
               </div>
             </button>
-          </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -60,18 +60,15 @@
       <div class="bigHeader">
         <div class="main__title">
           <div class="main__title-high"></div>
-          <p class="main__title-p">Услуги и сервисы</p>
+          <h1 class="main__title-p">Услуги и сервисы</h1>
         </div>
-        <nav class="bigMenu">
+        <div class="bigMenu">
           <div class="bigMenu__STO bigMenu__left">
-            <div class="bigMenu__repair">
-              <p class="bigMenu__p bigMenu__repair-p"> Оставить заявку</p>
-            </div>
-            <button class="repair__btn">
-                <div class="repair__img">
-                  <a href="#" class="repair__link"></a>
-                </div>
-              </button>
+            <label for="repair">
+                <p class="bigMenu__p bigMenu__repair-p"> Оставить заявку</p>
+            </label>
+            <button id="repair" class="repair__btn">
+            </button>
           </div>
           <div class="bigMenu__STO bigMenu__right">
             <div class="bigMenu__status">
@@ -80,33 +77,32 @@
               </p>
             </div>
             <button class="search__btn">
-                <div class="search__img">
-                  <a href="#" class="search__link"></a>
-                </div>
             </button>
           </div>
-        </nav>
+        </div>
       </div>
-      <ul class="slideMenu">
-        <li>
-          <a href="#" class="slideMenu__btns slideMenu__btns-first active">Ремонтируемые бренды</a>
-        </li>
-        <li>  
-          <a href="#" class="slideMenu__btns slideMenu__btns-second">Ремонтируемые устройства</a>
-        </li>
-        <li>  
-          <a href="#" class="slideMenu__btns slideMenu__btns-third">Цены на услуги</a>
-        </li>
-        <li>  
-          <a href="#" class="slideMenu__btns slideMenu__btns-fourth">Адреса сервисных центров</a>
-        </li>
-        <li>  
-          <a href="#" class="slideMenu__btns slideMenu__btns-fifth">Специальные цены</a>
-        </li>
-        <li>  
-          <a href="#" class="slideMenu__btns slideMenu__btns-six">Отзывы</a>
-        </li>
-      </ul>
+      <nav class="slider">
+        <ul class="slideMenu">
+          <li>
+            <a href="#" class="slideMenu__btns slideMenu__btns-first active">Ремонтируемые бренды</a>
+          </li>
+          <li>  
+            <a href="#" class="slideMenu__btns slideMenu__btns-second">Ремонтируемые устройства</a>
+          </li>
+          <li>  
+            <a href="#" class="slideMenu__btns slideMenu__btns-third">Цены на услуги</a>
+          </li>
+          <li>  
+            <a href="#" class="slideMenu__btns slideMenu__btns-fourth">Адреса сервисных центров</a>
+          </li>
+          <li>  
+            <a href="#" class="slideMenu__btns slideMenu__btns-fifth">Специальные цены</a>
+          </li>
+          <li>  
+            <a href="#" class="slideMenu__btns slideMenu__btns-six">Отзывы</a>
+          </li>
+        </ul>
+      </nav>
       <div class="readMore">
         <div class="readMore__bigMore">
           <div class="readMore__bigMore-p1">
@@ -115,11 +111,10 @@
           <div class="readMore__bigMore-p2">
             <p class="readMore__p readMore__p-2">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
           </div>
-          <button class="readMore__scroll">
+          <button class="readMore__scroll readMore__scroll-p">
             <div class="readMore__scroll-pic">
-              <img src="./pic/expand.svg" alt="ReadMore" class="readMore__scroll-pic-img">
             </div>
-            <p class="readMore__scroll-p">Читать далее</p>
+            Читать далее
           </button>
         </div>
         <div class="readMore__logo">
