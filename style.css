@@ -33,13 +33,18 @@ body {
   overflow-x: hidden;
 }
 
-header {
+.header {
   background-color: #fff;
-  box-shadow: 0 1px 0 0 #d9fff5;
+  border-bottom: 1px solid #d9fff5;
 }
 
 button {
   cursor: pointer;
+}
+
+.logo__link {
+  width: 100px;
+  height: 50px;
 }
 
 .header__iner {
@@ -59,6 +64,14 @@ button {
 
 .header__iner-out {
   width: 134px;
+  min-height: 88px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__iner-btnsRight {
+  width: 314px;
   min-height: 88px;
   display: flex;
   justify-content: space-around;
@@ -152,14 +165,11 @@ button {
 .main {
   min-width: 320px;
   min-height: 640px;
-  margin-top: 1px;
   padding-top: 24px;
   background-color: #f8f8f8;
 }
 
-.call__btn,
-.chat__btn,
-.profile__btn {
+.header__iner-btns {
   display: none;
 }
 
@@ -167,7 +177,7 @@ button {
   display: none;
 }
 
-.readMore__p.readMore__p-2 {
+.readMore__pSecond {
   display: none;
 }
 
@@ -216,7 +226,17 @@ button {
   margin-left: 16px;
 }
 
-.active {
+.slideMenu__btns:hover {
+  width: 246px;
+  height: 40px;
+  top: 176px;
+  left: 16px;
+  border-radius: 6px;
+  background-color: #fff;
+  /* Задаем обводку и цвет обводки*/
+}
+
+.slideMenu__btns-active {
   width: 246px;
   height: 40px;
   top: 176px;
@@ -228,14 +248,16 @@ button {
 
 .readMore {
   min-width: 320px;
-  height: 322px;
 }
 
 .readMore__bigMore {
-  min-width: 320px;
+  min-width: 288px;
   height: 150px;
+  padding: 0 16px;
 }
-
+.readMore__pFirst {
+  min-width: 300px;
+}
 .readMore__p {
   margin: 0;
   font-family: TT Lakes-Regular;
@@ -245,18 +267,15 @@ button {
   text-align: left;
   display: block;
   min-width: 290px;
-  height: 90px;
-  margin-left: 16px;
-  margin-right: 16px;
 }
 
 .readMore__scroll {
-  min-width: 132px;
+  display: inline-block;
+  width: 132px;
   height: 24px;
   white-space: nowrap;
   border: transparent;
   background-color: #f8f8f8;
-  display: flex;
   margin-left: 16px;
   margin-top: 16px;
   padding-left: 25px;
@@ -265,10 +284,6 @@ button {
   line-height: 24px;
   letter-spacing: -0.20000000298023224px;
   background: left, no-repeat url("pic/expand.svg");
-}
-
-.readMore__logo {
-  min-width: 320px;
 }
 
 .readMore__logo-img {
@@ -284,16 +299,10 @@ button {
   .dividerFirst {
     display: initial;
   }
-  .call__btn {
+  .header__iner-btns {
     display: initial;
   }
-  .chat__btn {
-    display: initial;
-  }
-  .profile__btn {
-    display: initial;
-  }
-  .readMore__p.readMore__p-2 {
+  .readMore__pSecond {
     display: initial;
   }
 }
@@ -323,17 +332,17 @@ button {
     align-items: center;
   }
 
-  .readMore__p-1 {
-    height: 100px;
-  }
-
-  .readMore__p-2 {
-    margin-top: 15px;
-    height: 45px;
+  .header__iner-btns {
+    width: 314px;
+    min-height: 88px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .readMore__p {
     width: 312px;
+    height: 100px;
     color: #1b1c21;
     font-size: 14px;
     font-style: normal;
@@ -342,6 +351,10 @@ button {
     letter-spacing: 0.2px;
   }
 
+  .readMore__pSecond,
+  .readMore__p-2 {
+    height: 50px;
+  }
   .readMore__bigMore {
     height: 280px;
     display: flex;
@@ -350,7 +363,6 @@ button {
   }
   .readMore {
     width: 100%;
-    height: 208px;
     display: flex;
     justify-content: space-around;
   }
@@ -362,13 +374,7 @@ button {
 
   .readMore__logo {
     width: 360px;
-    height: 259.655px;
     flex-shrink: 0;
-  }
-
-  .none {
-    height: 60px;
-    text-align: center;
   }
 
   .readMore__logo-img {
@@ -390,6 +396,47 @@ button {
     display: initial;
   }
 
+  .bigMenu__button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+  }
+
+  .bigMenu__repair-btn {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: space-between;
+  }
+
+  .bigMenu__search-btn {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: space-between;
+  }
+
+  .repair__search-icon {
+    width: 50px;
+    height: 50px;
+    background: url("./pic/checkstatus.svg") no-repeat center center;
+    border: none;
+  }
+
+  .bigMenu__STO.bigMenu__left {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .repair__button-icon {
+    width: 50px;
+    height: 50px;
+    background: url("./pic/repair.svg") no-repeat center center;
+    border: none;
+  }
   .main {
     width: 100%;
   }
@@ -427,9 +474,9 @@ button {
     display: none;
   }
 
+  .readMore__pFirst,
   .readMore__p-1 {
     min-width: 400px;
-    min-height: 70px;
   }
 
   .readMore__p {
@@ -447,8 +494,9 @@ button {
     content: ", что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.";
   }
 
-  .readMore__p.readMore__p-2 {
+  .readMore__pSecond {
     display: initial;
+    margin-top: 10px;
   }
 
   .readMore__bigMore {
@@ -464,14 +512,13 @@ button {
   }
 
   .readMore__scroll {
-    margin-top: 70px;
+    margin-top: 30px;
     margin-left: 0;
   }
 
   .readMore__logo {
     margin: 0;
     min-width: 530px;
-    height: 307px;
     flex-shrink: 0;
     border-radius: 6px;
   }
