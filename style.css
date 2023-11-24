@@ -47,6 +47,10 @@ button {
   height: 50px;
 }
 
+.bigMenu__button:focus {
+  outline: 2px solid #d9fff5;
+}
+
 .header__iner {
   min-height: 88px;
   display: flex;
@@ -408,7 +412,8 @@ button {
     display: flex;
     align-items: center;
     white-space: nowrap;
-    justify-content: space-between;
+    padding: 5px 5px;
+    border-radius: 6px;
   }
 
   .bigMenu__search-btn {
@@ -416,13 +421,16 @@ button {
     align-items: center;
     white-space: nowrap;
     justify-content: space-between;
+    padding: 5px 5px;
+    border-radius: 6px;
   }
 
   .repair__search-icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background: url("./pic/checkstatus.svg") no-repeat center center;
     border: none;
+    margin-left: 10px;
   }
 
   .bigMenu__STO.bigMenu__left {
@@ -432,10 +440,11 @@ button {
   }
 
   .repair__button-icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background: url("./pic/repair.svg") no-repeat center center;
     border: none;
+    margin-left: 10px;
   }
   .main {
     width: 100%;
