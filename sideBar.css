@@ -29,14 +29,23 @@
 /* ALL */
 
 .mobileMenu {
-  width: 320px;
-  height: 1024px;
-  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
-    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  position: absolute;
+  margin: 0;
+  padding-left: 24px;
+  padding-right: 24px;
   left: 0;
   top: 0;
-  position: absolute;
+  width: 320px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  max-height: 1024px;
   background: #fff;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .item {
@@ -82,53 +91,45 @@
 
 /* IMAGES */
 
-.circle__button-closeMenu {
+.circle__button--closeMenu {
   background: url(sidePic/burger.svg);
 }
 
-.logo-img {
+.logo--img {
   width: 97px;
   height: 51px;
 }
 
-.circle__button-search {
+.circle__button--search {
   background: url(sidePic/search.svg);
 }
 
-.circle__button-call {
+.circle__button--call {
   background: url(sidePic/call.svg);
 }
 
-.circle__button-chat {
+.circle__button--chat {
   background: url(sidePic/chat.svg);
 }
 
-.circle__button-profile {
+.circle__button--profile {
   background: url(sidePic/profile.svg);
 }
 
 /* OTHER */
 
+.header__logo--link {
+  display: inline-block;
+  margin-right: auto;
+}
+
 .container {
-  width: 85%;
-  padding-top: 19px;
+  width: 272px;
+  margin-top: 18px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
-}
-
-.header__left {
-  width: 150px;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.main {
-  padding-left: 24px;
-  width: 222px;
-  height: 876px;
+  gap: 16px;
 }
 
 .mainMenu {
@@ -139,11 +140,11 @@
 .mainMenu__item {
   margin-top: 32px;
 }
-.mainMenu__link-active {
+.mainMenu__link--active {
   color: #7e7e82;
   pointer-events: none;
 }
-.mainMenu__item-active {
+.mainMenu__item--active {
   background: url("sidePic/highlight.svg") no-repeat left center;
   transform: translate(-24px);
   padding: 8px 24px;
@@ -157,7 +158,8 @@
 /* FOOTER */
 
 .mobileMenu__footer {
-  margin-top: 268px;
+  padding-top: 34px;
+  margin-top: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -182,6 +184,7 @@
   font-weight: 700;
   line-height: 32px;
   letter-spacing: -0.6px;
+  font-family: TT Lakes-Bold, sans-serif;
 }
 .lang {
   display: flex;
@@ -189,7 +192,7 @@
   gap: 7px;
   padding: 0;
 }
-.lang__link-active {
+.lang__link--active {
   color: #7e7e82;
   pointer-events: none;
 }
