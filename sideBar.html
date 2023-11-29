@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SideBar</title>
+    <title>Document</title>
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="sideBar.css" />
   </head>
@@ -11,67 +11,64 @@
     <aside class="mobileMenu">
       <header class="header mobileMenu__header">
         <div class="container">
-          <div class="header__left">
-            <button class="circle__button circle__button-closeMenu"></button>
-            <a class="link header__logo-link logo-link" href="">
-              <img class="logo-img" src="sidePic/Group.svg" alt="Логотип CPS" />
-            </a>
-          </div>
-          <button class="circle__button circle__button-search"></button>
+          <button class="circle__button circle__button--closeMenu"></button>
+          <a class="link header__logo--link logo--link" href="">
+            <img class="logo-img" src="sidePic/Group.svg" alt="Логотип CPS" />
+          </a>
+          <button class="circle__button circle__button--search"></button>
         </div>
       </header>
-      <main class="main">
-        <nav class="nav">
-          <ul class="mainMenu mobileMenu__mainMenu">
-            <li class="item mainMenu__item mainMenu__item-active">
-              <a class="link mainMenu__link mainMenu__link-active" href="#"
-                >Ремонт техники</a
-              >
-            </li>
-            <li class="item mainMenu__item">
-              <a class="link mainMenu__link" href="#">Услуги и сервисы</a>
-            </li>
-            <li class="item mainMenu__item">
-              <a class="link mainMenu__link" href="#">Корпоративным клиентам</a>
-            </li>
-            <li class="item mainMenu__item">
-              <a class="link mainMenu__link" href="#">Продавцам техники</a>
-            </li>
-            <li class="item mainMenu__item">
-              <a class="link mainMenu__link" href="#">Партнерам</a>
-            </li>
-            <li class="item mainMenu__item">
-              <a class="link mainMenu__link" href="#">Производителям</a>
-            </li>
-            <li class="item mainMenu__item">
-              <a class="link mainMenu__link" href="#">Наши сервисные центры</a>
-            </li>
-            <li class="item mainMenu__item">
-              <a class="link mainMenu__link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
 
-        <footer class="footer mobileMenu__footer">
-          <div class="contact footer__contact">
-            <button class="circle__button circle__button-call"></button>
-            <button class="circle__button circle__button-chat"></button>
-            <button class="circle__button circle__button-profile"></button>
-          </div>
+      <nav class="nav">
+        <ul class="mainMenu mobileMenu__mainMenu">
+          <li class="item mainMenu__item mainMenu__item--active">
+            <span class="link mainMenu__link mainMenu__link--active" href="#"
+              >Ремонт техники</span
+            >
+          </li>
+          <li class="item mainMenu__item">
+            <a class="link mainMenu__link" href="#">Услуги и сервисы</a>
+          </li>
+          <li class="item mainMenu__item">
+            <a class="link mainMenu__link" href="#">Корпоративным клиентам</a>
+          </li>
+          <li class="item mainMenu__item">
+            <a class="link mainMenu__link" href="#">Продавцам техники</a>
+          </li>
+          <li class="item mainMenu__item">
+            <a class="link mainMenu__link" href="#">Партнерам</a>
+          </li>
+          <li class="item mainMenu__item">
+            <a class="link mainMenu__link" href="#">Производителям</a>
+          </li>
+          <li class="item mainMenu__item">
+            <a class="link mainMenu__link" href="#">Наши сервисные центры</a>
+          </li>
+          <li class="item mainMenu__item">
+            <a class="link mainMenu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
 
-          <a class="link email__link" href="mailto:mail@cps.com"
-            >mail@cps.com</a
-          >
-          <a class="link phone__link" href="tel:+78008908900">8 800 890 8900</a>
-          <ul class="lang footer__lang-side">
-            <li class="item">
-              <a href="#" class="link lang__link lang__link-active">RU</a>
-            </li>
-            <li class="item"><a href="#" class="link lang__link">EN</a></li>
-            <li class="item"><a href="#" class="link lang__link">CH</a></li>
-          </ul>
-        </footer>
-      </main>
+      <footer class="footer mobileMenu__footer">
+        <div class="contact footer__contact">
+          <button class="circle__button circle__button--call"></button>
+          <button class="circle__button circle__button--chat"></button>
+          <button class="circle__button circle__button--profile"></button>
+        </div>
+
+        <a class="link email__link" href="mailto:mail@cps.com">mail@cps.com</a>
+
+        <a class="link phone__link" href="tel:+78008908900">8 800 890 8900</a>
+
+        <ul class="lang footer__lang--side">
+          <li class="item">
+            <span href="#" class="link lang__link lang__link--active">RU</span>
+          </li>
+          <li class="item"><a href="#" class="link lang__link">EN</a></li>
+          <li class="item"><a href="#" class="link lang__link">CH</a></li>
+        </ul>
+      </footer>
     </aside>
   </body>
 </html>
