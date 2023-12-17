@@ -4,7 +4,7 @@
 }
 
 html {
-  font-family: "TT Lakes", "Open Sans", "Arial", sans-serif;
+  font-family: "TT Lakes", sans-serif;
   background-color: #f8f8f8;
   padding: 0;
   margin: 0;
@@ -35,7 +35,7 @@ Header
 
 .header__title {
   color: #7e7e82;
-  font-family: "TT Lakes", "Open Sans", "Arial", sans-serif;
+  font-family: "TT Lakes", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -73,6 +73,7 @@ Header
   list-style: none;
   width: 240px;
 }
+
 .brand__list--brands {
   display: flex;
   justify-content: flex-start;
@@ -114,6 +115,7 @@ Header
   margin-left: auto;
   margin-right: 16px;
 }
+
 .circle__btn--img {
   background: url(images/go.svg) no-repeat center center;
 }
@@ -170,6 +172,7 @@ Header
 */
 
 @media (max-width: 767px) {
+  
   .header__title {
     padding-left: 16px;
   }
@@ -205,9 +208,11 @@ Header
 }
 
 @media (min-width: 768px) and (max-width: 1120px) {
+  
   .header__title {
     padding-left: 24px;
   }
+  
   .brand__list {
     display: flex;
     column-gap: 24px;
@@ -215,15 +220,18 @@ Header
     row-gap: 16px;
     align-content: start;
   }
+  
   .brand__list--item {
     width: 224px;
   }
+  
   .for-pagination {
     display: none;
   }
 }
 
 @media (min-width: 1120px) {
+  
   .for-pagination {
     display: none;
   }
